@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <title>TiempoDojo</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="container">
+            <h1 class="nav-title">DojoWeather</h1>
+            <ul class="nav-links" onclick="alerta(this)">
+                <li><a href="#">Burbank</a></li>
+                <li><a href="#">Chicaco</a></li>
+                <li><a href="#">Dallas</a></li>
+            </ul>
+        </div>
+    </div>
+
+       <!-- CUERPO PRINCIPAL  -->
+
+    <div class="container main">
+        <div class="cardweather">
+            <div class="card-header">
+                <h3 class="card-title">San Jose</h3>
+                <h5>Show temperature in: </h5>
+                <select name="" class="temperatura" onchange="cambiartemperatura(this)">
+                    <option value="C"> °C </option>
+                    <option value="F"> °F </option>
+               </select>
+            </div>
+            <div class="card-body">
+                <!-- FRAME TODAY -->
+                <div class="col">
+                    <div class="sub-col">
+                        <h3>Today</h3>
+                        <img src="./assets/some_rain.png" alt="rain">
+                        <h5>Some rain</h5>
+                    </div>
+                    <div class="grados">
+                        <span class="textred" id="grados1">24°</span>
+                        <span class="textblue"id="grados2">18°</span>
+                    </div>
+                </div>
+
+                <!-- FRAME TOMORROW -->
+                <div class="col">
+                    <div class="sub-col">
+                        <h3>Tomorrow</h3>
+                        <img src="./assets/some_sun.png" alt="sun">
+                        <h5>Some sun</h5>
+                    </div>
+                    <div class="grados">
+                        <span class="textred" id="grados3">27°</span>
+                        <span class="textblue" id="grados4">19°</span>
+                    </div>
+                </div>
+
+               
+                <!-- FRAME FRIDAY -->
+                <div class="col">
+                    <div class="sub-col">
+                        <h3>Friday</h3>
+                        <img src="./assets/some_clouds.png" alt="clouds">
+                        <h5>Some clouds</h5>
+                    </div>
+                    <div class="grados">
+                        <span class="textred" id="grados5">21°</span>
+                        <span class="textblue"id="grados6">16°</span>
+                    </div>
+                </div>
+
+                  <!-- FRAME SATURDAY -->
+                  <div class="col">
+                    <div class="sub-col">
+                        <h3>Saturday</h3>
+                        <img src="./assets/some_sun.png" alt="sun">
+                        <h5>Some sun</h5>
+                    </div>
+                    <div class="grados">
+                        <span class="textred" id="grados7">26°</span>
+                        <span class="textblue" id="grados8">21°</span>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="card-cookies">
+                <img src="./assets/cookie.png" alt="cookie">
+                    <div class="body-cookies">
+                        <h3>Stop! Cookie time</h3>
+                        <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analise our traffic.
+                        <a href="#">Read More..</a> </p>
+                    </div>
+                    <button class="body-cookies btn" onclick="ocultarcookies(this)">I Accept</button>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+</html>

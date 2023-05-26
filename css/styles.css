@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+.container, .nav-links, .nav, .card-body  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav {
+    height: 80px;
+    background-color: rgb(111, 188, 219);
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.nav-links {
+    width: 50%;
+    list-style-type: none;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #f3f3f3;
+    text-decoration: none;
+}
+
+.container.main, .card-body {
+    align-items: flex-start;
+    
+}
+.container.main {
+    position: relative;
+    
+}
+
+.cardweather {
+    background-color: #fff;
+    margin-bottom: 20px;
+    font-size: 30px;
+    width: 100%;
+}
+.card-header {
+    padding: 20px;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    
+}
+.card-title {
+    display: flex;
+    flex: 4;
+}
+
+.col {
+    padding: 20px;
+    margin: 10px;
+    background-color:gainsboro; ;
+    border: 1px solid gainsboro;
+    align-items: center;
+    text-align: center;
+  
+}
+.sub-col {
+   margin-bottom: 20px;
+   flex-direction: column;   
+}
+img{
+    width: 100px;
+    border-radius: 50%;
+}
+.textred{
+    color: red;
+    font-weight: bold;
+}
+.textblue{
+    color: blue;
+    font-weight: bold;
+}
+.grados {
+    display: flex;
+    flex: 1;
+    flex-direction: row;   
+    justify-content: space-between;
+ }
+ .card-cookies {
+    background-color: gainsboro;
+    border: 2px solid black;
+    margin-top: 20px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;   
+    justify-content: center;
+    align-items: center;
+    position: fixed; /*Usa position: fixed; para posicionar el mensaje de política de cookies en la parte inferior de la página */
+    bottom: 0; /*Usa position: fixed; para posicionar el mensaje de política de cookies en la parte inferior de la página */
+    left: 0; /*Usa position: fixed; para posicionar el mensaje de política de cookies en la parte inferior de la página */
+    width: 100%;
+}
+
+.btn{
+    width: 150px; 
+    border: 2px solid black;
+    background-color: rgba(10, 146, 224, 0.925);
+    color:white;
+    text-align: center;
+    font-size: 15px;
+    box-shadow: 8px 5px 1px black;
+    
+ }
+.ocultar{
+    display: none;
+}
